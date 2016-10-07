@@ -1,0 +1,5 @@
+var FotogalleryController = function(){
+    return{
+        
+    }
+}

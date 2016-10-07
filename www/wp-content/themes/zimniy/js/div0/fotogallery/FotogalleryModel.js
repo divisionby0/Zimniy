@@ -1,0 +1,5 @@
+var FotogalleryModel = function(){
+    return{
+        
+    }
+}

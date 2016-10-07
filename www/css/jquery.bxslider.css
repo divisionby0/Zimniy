@@ -85,7 +85,7 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: url('../images/of.png')no-repeat center;
+	background: url('images/of.png')no-repeat center;
 	text-indent: -9999px;
 	display: block;
 	width: 30px;
@@ -99,18 +99,18 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: url('../images/on.png')no-repeat center;
+	background: url('images/on.png')no-repeat center;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
 	left: 0px;
-	background: url(../images/left.png) no-repeat;
+	background: url(images/left.jpg) no-repeat;
 }
 .bx-wrapper .bx-next {
 	right: 0px;
-	background: url(../images/right.png) no-repeat;
+	background: url(images/right.jpg) no-repeat;
 }
 
 .bx-wrapper .bx-controls-direction a {
