@@ -17,7 +17,7 @@ var FotogalleryView = function(){
     }
 
     function dateSelectedHandler(event){
-        
+        console.log('dateSelectedHandler');
         var dataQuoteText = {
             action: 'get_ids_by_date',
             selectedDate:event.selectedDate
@@ -91,7 +91,6 @@ var FotogalleryView = function(){
     }
 
 
-
     function createRow(startIndex, pageElement){
         var rowElement = $('<div class="row">').appendTo(pageElement);
 
@@ -105,7 +104,6 @@ var FotogalleryView = function(){
     }
 
     function createImageHtml(imageUrl, rowElement){
-
         var imageContainer1 = $('<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">').appendTo(rowElement);
         var imageContainer2 = $('<div class="slide-item">').appendTo(imageContainer1);
         var imageAnchorElement = $('<a href="'+imageUrl+'" class="modalbox" rel="gallery"></a>').appendTo(imageContainer2);
@@ -121,40 +119,17 @@ var FotogalleryView = function(){
         sliderElement.empty();
     }
     function reloadSlider(){
-        $('.bxslider2').bxSlider({
+        $('#gallerySlider').bxSlider({
             pager:false
-        });
-        var  W = $(window).width();
-
-        if( W <= 760){
-            $('.bxslider3').bxSlider({
-                minSlides: 1,
-                maxSlides: 1,
-                pager:false
-            });
-        } else{
-            $('.bxslider3').bxSlider({
-                minSlides: 1,
-                maxSlides: 3,
-                slideWidth: 220,
-                slideMargin: 66,
-                pager:false
-            });
-        }
-        $('.bxslider').bxSlider({
-            minSlides: 1,
-            maxSlides: 2,
-            slideWidth: 540,
-            slideMargin: 30,
-            pager: false
         });
     }
 
-
     return{
         init:function(){
+            console.log("INITED");
             sliderElement = $('#gallerySlider');
             addDateListener();
+            reloadSlider();
         },
         clear:function(){
             console.log("clear fotogallery...");

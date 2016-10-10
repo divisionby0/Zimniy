@@ -18,7 +18,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-1.png" alt="">
                     </div>
                     <h4>3 зала до 700 гостей</h4>
                     <p>Изолированные залы позволяют<br>
@@ -30,7 +30,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-2.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-2.png" alt="">
                     </div>
                     <h4>Живой звук</h4>
                     <p>Приглашенные звезды<br>
@@ -42,7 +42,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-3.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-3.png" alt="">
                     </div>
                     <h4>7,5 кВт звука</h4>
                     <p>Испытайте на себе мощное <br>
@@ -53,7 +53,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-4.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-4.png" alt="">
                     </div>
                     <h4>27 камер видеонаблюдения</h4>
                     <p>Фейс контроль, охрана,<br>
@@ -67,7 +67,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-lg-offset-1 pr-0">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-5.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-5.png" alt="">
                     </div>
                     <h4>Ресторан, бар, кальян</h4>
                     <p>Полный спектр <a href="">угощений</a><br>
@@ -78,7 +78,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-6.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-6.png" alt="">
                     </div>
                     <h4>42 световых прибора</h4>
                     <p>Управляемые “головы”<br>
@@ -91,7 +91,7 @@
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 pl-0">
                 <div class="about-item">
                     <div class="about-img">
-                        <img src="../../../../css/images/ab-7.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/ab-7.png" alt="">
                     </div>
                     <h4>Караоке с ведущим</h4>
                     <p>Испытайте на себе мощное <br>

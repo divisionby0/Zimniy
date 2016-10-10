@@ -10,13 +10,17 @@ var Calendar = function(){
         currentDate = curr_date+"."+curr_month+"."+curr_year;
     }
 
-
     return{
         init:function(){
             $( "#calendarNormal" ).datepicker({onSelect: function(dateText) {
-                console.log("Selected date: " + dateText + "; input's current value: " + this.value);
                 EventBus.dispatchEvent('DATE_SELECTED', {selectedDate:dateText});
             }});
+
+            //$( "#ui-datepicker-div" ).datepicker({maxDate: 0});
+
+            $( "#calendarMobileInput" ).on('change', function(){
+                EventBus.dispatchEvent('DATE_SELECTED', {selectedDate:$(this).val()});
+            });
             getCurrentDate();
         }
     }

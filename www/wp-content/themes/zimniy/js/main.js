@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // div0 code
-    var fotogalleryView = new FotogalleryView();
-    fotogalleryView.init();
+    //var fotogalleryView = new FotogalleryView();
+    //fotogalleryView.init();
 
 
     $('.anhor a[href*=#]').bind("click", function(e){
@@ -22,6 +22,35 @@ $(document).ready(function() {
 
     $(document).ready(function(){
           var $menu = $("#menu");
+
+
+        // update sliders
+        var  W = $(window).width();
+
+        if( W <= 760){
+            $('.bxslider3').bxSlider({
+                minSlides: 1,
+                maxSlides: 1,
+                pager:false
+            });
+        } else{
+            $('.bxslider3').bxSlider({
+                minSlides: 1,
+                maxSlides: 3,
+                slideWidth: 220,
+                slideMargin: 66,
+                pager:false
+            });
+        }
+        $('.bxslider').bxSlider({
+            minSlides: 1,
+            maxSlides: 2,
+            slideWidth: 540,
+            slideMargin: 30,
+            pager: false
+        });
+
+
 
           $(window).scroll(function(){
             if ( $(this).scrollTop() > 100 && $menu.hasClass("default-menu") ){
@@ -110,10 +139,12 @@ $(document).ready(function() {
 
     $( function() {
       $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+        $.datepicker.setDefaults({maxDate: 0});
       $( ".datepicker" ).datepicker();
     });
 
     $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+    $.datepicker.setDefaults({maxDate: 0});
     /*
        $('.bxslider2').bxSlider({
         pager:false

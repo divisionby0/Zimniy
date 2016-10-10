@@ -41,14 +41,14 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0X2eBi0LRqoInQ_GzEkQReB3_9sn6Pwp&amp;width=100%&amp;height=508&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
             </div>
             <div class="soc-footer">
-                <a href=""><img src="../../../../css/images/soc-1.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-2.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-3.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-4.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-5.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-6.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-7.png" alt=""></a>
-                <a href=""><img src="../../../../css/images/soc-8.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-1.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-2.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-3.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-4.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-5.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-6.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-7.png" alt=""></a>
+                <a href=""><img src="<?php echo get_template_directory_uri(); ?>/css/images/soc-8.png" alt=""></a>
             </div>
             <div class="phone-footer">
                 +7 926 5 500 500

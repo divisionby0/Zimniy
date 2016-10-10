@@ -28,7 +28,7 @@ class Calendar
     private function createCalendarMobile(){
         echo '<div class="callendar-mobile hidden-lg">
             <p>Выбрать фотографии за интересующую дату</p>
-            <input type="text" class="datepicker" placeholder="Выберите число">
+            <input type="text" class="datepicker" placeholder="Выберите число" id="calendarMobileInput">
         </div>';
     }
     private function createCalendar(){

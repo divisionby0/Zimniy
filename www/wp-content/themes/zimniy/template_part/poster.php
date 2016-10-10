@@ -18,7 +18,7 @@
                 <li>
                     <div class="poster-item">
                         <div class="poster-img">
-                            <img src="../../../../css/images/slide-1.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/css/images/slide-1.jpg" alt="">
                             <h3>Party Beat</h3>
                             <span>03.09.2016</span><br>
                             <mark>Line up:</mark><br>
@@ -40,7 +40,7 @@
                 <li>
                     <div class="poster-item">
                         <div class="poster-img">
-                            <img src="../../../../css/images/slide-2.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/css/images/slide-2.jpg" alt="">
                             <h3>Party Beat</h3>
                             <span>03.09.2016</span><br>
                             <mark>Line up:</mark><br>
@@ -62,7 +62,7 @@
                 <li>
                     <div class="poster-item">
                         <div class="poster-img">
-                            <img src="../../../../css/images/slide-1.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/css/images/slide-1.jpg" alt="">
                             <h3>Party Beat</h3>
                             <span>03.09.2016</span><br>
                             <mark>Line up:</mark><br>
@@ -84,7 +84,7 @@
                 <li>
                     <div class="poster-item">
                         <div class="poster-img">
-                            <img src="../../../../css/images/slide-2.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/css/images/slide-2.jpg" alt="">
                             <h3>Party Beat</h3>
                             <span>03.09.2016</span><br>
                             <mark>Line up:</mark><br>

@@ -34,7 +34,7 @@
         <div class="clearfix"></div>
         <div class="hidden-lg hidden-md col-xs-12">
             <div class="online-img">
-                <img src="../../../../css/images/online-img.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/css/images/online-img.jpg" alt="">
                 <a href="#scheme" class="">Просмотреть схему зала</a>
             </div>
         </div>
@@ -78,7 +78,7 @@
         </div>
         <div class="col-sm-12 col-md-6 visible-lg visible-md">
             <div class="online-img">
-                <img src="../../../../css/images/online-img.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/css/images/online-img.jpg" alt="">
                 <a href="#scheme">Просмотреть схему зала</a>
             </div>
         </div>
@@ -93,7 +93,7 @@
         <div class="clearfix"></div>
         <div class="hidden-lg hidden-md col-xs-12">
             <div class="online-img">
-                <img src="../../../../css/images/online-img.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/css/images/online-img.jpg" alt="">
                 <a href="#scheme">Просмотреть схему зала</a>
             </div>
         </div>
@@ -131,7 +131,7 @@
         </div>
         <div class="col-sm-12 col-md-6 visible-lg visible-md">
             <div class="online-img">
-                <img src="../../../../css/images/online-img.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/css/images/online-img.jpg" alt="">
                 <a href="#scheme">Просмотреть схему зала</a>
             </div>
         </div>
@@ -143,6 +143,6 @@
         <h3>Связь через месенджер</h3>
     </div>
     <div class="cont-popup">
-        <p><span><img src="../../../../css/images/vibe.png" alt=""></span><mark>Добавьте номер “Зимнего Клуба” +7 926 5 500 500<br>в свою телефонную книгу и найдите нас в программе.</mark></p>
+        <p><span><img src="<?php echo get_template_directory_uri(); ?>/css/images/vibe.png" alt=""></span><mark>Добавьте номер “Зимнего Клуба” +7 926 5 500 500<br>в свою телефонную книгу и найдите нас в программе.</mark></p>
     </div>
 </div>

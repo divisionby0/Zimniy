@@ -15,7 +15,7 @@ class GalleryView
     public function __construct(Map $collection)
     {
         //$this->logger = Logger::getRootLogger();
-
+        /*
         $this->pages = new Map('pages');
         $this->images = $collection;
         $this->ids = $collection->getKeys();
@@ -24,6 +24,10 @@ class GalleryView
 
         $this->createContainerPrefix();
         $this->createContent();
+        $this->createContainerPostfix();
+        */
+
+        $this->createContainerPrefix();
         $this->createContainerPostfix();
     }
 

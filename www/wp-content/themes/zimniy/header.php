@@ -5,9 +5,6 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
 
-<?php
-define("THEME_DIR", get_template_directory_uri());
-?>
 <head>
     <!--=== META TAGS ===-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,7 +14,6 @@ define("THEME_DIR", get_template_directory_uri());
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!--=== LINK TAGS ===-->
-    <?php echo 'logo: '.THEME_DIR.'/css/images/logo.png'?>
 
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/css/images/logo.png" type="image/png"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>

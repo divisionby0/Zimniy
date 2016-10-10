@@ -21,17 +21,17 @@
             </div>
             <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2">
                 <div class="entrance-img">
-                    <img src="../../../../css/images/e-1.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/e-1.png" alt="">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2">
                 <div class="entrance-img">
-                    <img src="../../../../css/images/e-2.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/e-2.png" alt="">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-2 col-md-4 col-lg-2">
                 <div class="entrance-img">
-                    <img src="../../../../css/images/e-3.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/e-3.png" alt="">
                 </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6 hidden-lg">

@@ -843,15 +843,15 @@
 		 */
 		var updateDirectionControls = function(){
 
-			console.log("updateDirectionControls getPagerQty()="+getPagerQty()+"  loop: "+slider.settings.infiniteLoop+"  hideControlsOnEnd:"+slider.settings.hideControlOnEnd);
+			//console.log("updateDirectionControls getPagerQty()="+getPagerQty()+"  loop: "+slider.settings.infiniteLoop+"  hideControlsOnEnd:"+slider.settings.hideControlOnEnd);
 			var totalPages = getPagerQty();
 			if(totalPages == 1){
-				console.log("disabling all - only one page");
+				//console.log("disabling all - only one page");
 				slider.controls.prev.addClass('disabled');
 				slider.controls.next.addClass('disabled');
 			}
 			else if(!slider.settings.infiniteLoop && slider.settings.hideControlOnEnd){
-				console.log("not loop + hide controlsOnEnd=true");
+				//console.log("not loop + hide controlsOnEnd=true");
 				// if first slide
 				if (slider.active.index == 0){
 					slider.controls.prev.addClass('disabled');
