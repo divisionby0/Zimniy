@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="visible-lg visible-md col-md-8 col-lg-8 pl-0">
                     <div class="plane">
-                        <img src="../../../../css/images/plane.png" alt="" id="" usemap="#simple" class="map">
+                        <img src="<?php echo get_template_directory_uri(); ?>/css/images/plane.png" alt="" id="" usemap="#simple" class="map">
                         <map name="simple">
                             <area id="dir1" shape="poly" alt="" title="" coords="80,15,80,315,126,315,123,15" data-maphilight='{"strokeColor":"ff3e84","strokeWidth":3,"fillColor":"ff3e84","fillOpacity":0.5}' />
                             <area id="dir2" shape="rect" alt="" title="" coords="155,311,385,393" data-maphilight='{"strokeColor":"ff3e84","strokeWidth":3,"fillColor":"ff3e84","fillOpacity":0.5}' />
@@ -34,7 +34,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-6 pl-0">
                             <div class="room-item room-1">
                                 <div class="room-img">
-                                    <img src="../../../../css/images/k1.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/k1.jpg" alt="">
                                 </div>
                                 <h3>Vip зона</h3>
                                 <p>Изолированные кабинки<br>
@@ -50,7 +50,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-6 pr-0">
                             <div class="room-item room-2 m0">
                                 <div class="room-img">
-                                    <img src="../../../../css/images/k1.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/k1.jpg" alt="">
                                 </div>
                                 <h3>Подиум</h3>
                                 <p>Столики с диванами в<br>
@@ -68,7 +68,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-6 pl-0">
                             <div class="room-item room-3">
                                 <div class="room-img">
-                                    <img src="../../../../css/images/k1.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/k1.jpg" alt="">
                                 </div>
                                 <h3>Боковые</h3>
                                 <p>Столики сдиванами<br>
@@ -83,7 +83,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-6 pr-0">
                             <div class="room-item room-4 m0">
                                 <div class="room-img">
-                                    <img src="../../../../css/images/k1.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/k1.jpg" alt="">
                                 </div>
                                 <h3>Центр</h3>
                                 <p>Столики со стульями<br>

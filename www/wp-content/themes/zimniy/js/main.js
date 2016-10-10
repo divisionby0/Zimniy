@@ -4,7 +4,6 @@ $(document).ready(function() {
     fotogalleryView.init();
 
 
-
     $('.anhor a[href*=#]').bind("click", function(e){
       var anchor = $(this);
       $('html, body').stop().animate({
@@ -115,6 +114,7 @@ $(document).ready(function() {
     });
 
     $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+    /*
        $('.bxslider2').bxSlider({
         pager:false
        });
@@ -142,6 +142,7 @@ $(document).ready(function() {
           slideMargin: 30,
           pager: false
       });
+      */
 
       $( "#tabs" ).tabs({
         show: { effect: "fadeIn", duration: 800 },
