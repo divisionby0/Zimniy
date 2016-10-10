@@ -33,7 +33,7 @@ class Calendar
     }
     private function createCalendar(){
         echo '<div class="slider-calendar visible-lg">
-            <img src="../../../../css/images/calendar.jpg" alt="">
+            <div id="calendarNormal"></div>
         </div>';
     }
 }

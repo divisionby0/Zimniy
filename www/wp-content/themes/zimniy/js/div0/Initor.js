@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    console.log("doc ready");
 
     var fotogalleryView = new FotogalleryView();
     fotogalleryView.init();
+
+    var calendar = new Calendar();
+    calendar.init();
 });

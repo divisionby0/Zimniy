@@ -10,7 +10,7 @@ var FotogalleryView = function(){
         },
         clear:function(){
             console.log("clear fotogallery...");
-            sliderElement.clear();
+            //sliderElement.empty();
         },
         setData:function(data){
             // data is array or Map

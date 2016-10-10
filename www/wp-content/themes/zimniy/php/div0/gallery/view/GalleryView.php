@@ -14,7 +14,7 @@ class GalleryView
 
     public function __construct(Map $collection)
     {
-        $this->logger = Logger::getRootLogger();
+        //$this->logger = Logger::getRootLogger();
 
         $this->pages = new Map('pages');
         $this->images = $collection;
@@ -63,7 +63,7 @@ class GalleryView
     }
 
     private function log($message){
-        $this->logger->debug($message);
+        //$this->logger->debug($message);
     }
 
     private function createImageHtml(Image $image){
