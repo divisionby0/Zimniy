@@ -26,6 +26,11 @@ include_once('php/div0/calendar/Calendar.php');
 include_once('php/div0/tags/GetTags.php');
 include_once('php/div0/tags/TagsView.php');
 
+include_once('php/div0/posters/GetPosters.php');
+include_once('php/div0/posters/Poster.php');
+include_once('php/div0/posters/PostersView.php');
+include_once('php/div0/view/popup/BuyOnlinePopup.php');
+
 require_once dirname(__FILE__).'/php/div0/utils/logging/log4php/Logger.php';
 //Logger::configure(dirname(__FILE__).'/php/div0/utils/logging/log4php/resources/appender_file.properties');
 
@@ -66,6 +71,9 @@ function enqueue_scripts() {
     wp_register_script( 'initor', THEME_DIR . '/js/div0/Initor.js');
     wp_register_script( 'fotogalleryView', THEME_DIR . '/js/div0/fotogallery/FotogalleryView.js');
     wp_register_script( 'calendar', THEME_DIR . '/js/div0/calendar/Calendar.js');
+    
+    wp_register_script( 'buyOnlinePopup', THEME_DIR . '/js/div0/popups/BuyOnlinePopup.js');
+    wp_register_script( 'poster', THEME_DIR . '/js/div0/Poster.js');
 
     /** REGISTER HTML5 OtherScript.js **/
     //wp_register_script( 'custom-script', THEME_DIR . '/js_path/customscript.js', array( 'jquery' ), '1', false );
@@ -78,10 +86,14 @@ function enqueue_scripts() {
     wp_enqueue_script( 'listIterator' );
 
     wp_enqueue_script( 'eventBus' );
-    
-    wp_enqueue_script( 'initor' );
+
+    wp_enqueue_script( 'buyOnlinePopup' );
+
     wp_enqueue_script( 'fotogalleryView' );
     wp_enqueue_script( 'calendar' );
+    wp_enqueue_script( 'poster' );
+
+    wp_enqueue_script( 'initor' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
@@ -136,3 +148,28 @@ function get_images_by_ids_callback(){
 
 add_action('wp_ajax_get_ids_by_date', 'get_ids_by_date_callback');
 add_action('wp_ajax_get_images_by_ids', 'get_images_by_ids_callback');
+
+// woocommerce
+
+function woo_add_custom_general_fields() {
+    global $woocommerce, $post;
+    echo '<div class="options_group">';
+
+    $partyDate = get_post_meta($post->ID, 'party_date');
+    echo '<div>PARTY DATE: <input name="party_date_text_field" value="'.$partyDate[0].'"></div>';
+    echo '</div>';
+}
+
+function woo_add_custom_general_fields_save( $post_id ){
+    // Text Field
+    $woocommerce_party_date_text_field = $_POST['party_date_text_field'];
+    if( !empty( $woocommerce_party_date_text_field ) ){
+        update_post_meta( $post_id, 'party_date', esc_attr( $woocommerce_party_date_text_field ) );
+    }
+}
+
+// Display Fields
+add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_general_fields' );
+
+// Save Fields
+add_action( 'woocommerce_process_product_meta', 'woo_add_custom_general_fields_save' );
