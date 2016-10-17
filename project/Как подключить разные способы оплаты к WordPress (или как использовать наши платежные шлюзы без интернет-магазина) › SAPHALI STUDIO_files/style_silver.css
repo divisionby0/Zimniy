@@ -1,0 +1,86 @@
+body {color: #333; background: #bbc1c4 url(../images/back_body_silver.png) repeat top center;  }
+a {text-decoration:none; color:#993333; }
+a:hover {text-decoration:none; color: #0a476b; }
+a.invert {text-decoration:none; color:#0a476b; }
+a.invert:hover {text-decoration:none; color: #993333; }
+
+#header {background: url(../images/back_header_silver.png) repeat-x top center;  }
+
+#setop {border: solid 1px #aaa; background-color: #eee; color: #555; }
+
+#loopedSlider img.prev {background: url(../images/arrow_left_dark.png) no-repeat 0 0; } 
+#loopedSlider img.prev:hover {background: url(../images/arrow_left_dark.png) no-repeat 0 -100px; }
+#loopedSlider img.next {background: url(../images/arrow_right_dark.png) no-repeat 0 0; } 
+#loopedSlider img.next:hover {background: url(../images/arrow_right_dark.png) no-repeat 0 -100px; }
+
+.slides div div{ background:none; border:none; }
+.slides div.cover img {border: solid 4px #eee;}
+
+ul.pagination li a {background-color: #222; }
+ul.pagination li a:hover {border: none; background-color: #000; }
+
+#posts .post { border: solid 1px #ddd; }
+#posts .post:hover {background-color: #eee; border: solid 1px #fff; }
+
+#posts div.cover img {border: solid 4px #eee;}
+#main p.header, #main h1, .post h2 { color: #0a476b; }
+
+#single h1, #single h2, #single h3, #single h4, #single h5, #single h6 { color: #0a476b; }
+#single img {border: solid 4px #eee;}
+
+#main {border-bottom: solid 1px #fff;}
+#main .funcs a {color: #999;}
+#main .funcs a:hover {color: #fff;}
+
+#main blockquote {border-left: solid 5px #aaa; background-color: #eee; }
+#main img.preview {border: solid 5px #eee;}
+#side img.preview {border: solid 5px #eee; }
+#main div.share {border: solid 1px #aaa; background-color: #eee;}
+#main div.share p.header { color: #fff; }
+#main div.share img {border: none;}
+
+/* Post comments and trackbacks styling */
+
+#main p.tags { background: url(../images/icon_tag.png) no-repeat top left; }
+
+#commentform #submit {background:none; }
+
+/* Post comments and trackbacks styling */
+#main p.trackbackurl span.url {border-bottom: dotted 1px #ddd; }
+
+#main div.pagerbox a {padding: 4px 6px; color: #333; background-color: #ddd; border: solid 1px #777;}
+#main div.pagerbox a:hover {background-color: #333; color: #fff; }
+#main div.pagerbox a.current {color: #fff; background-color: #aaa; border: solid 1px #777; }
+
+#single .normalComments li.comment {border: solid 1px #aaa; background-color: #ddd; }
+#single .normalComments li.bypostauthor { border: solid 1px #aaa; background-color: #eee; }
+
+#single .normalComments cite.author {color: #333;}
+#single .normalComments img.avatar {padding: 3px; border: solid 1px #aaa;}
+#single ol.normalComments cite {background: url(../images/icon_user.png) no-repeat top left; }
+
+#main input, #main textarea, #commentform input, #commentform textarea {background-color: #ddd; border: 1px solid #aaa; color: #333; }
+#commentform #submit, input#submit {background-color: #0a476b; color: #fff; border: none; }
+input#submit {width: auto; text-align: center; padding: 0 10px;}
+
+.afterpost .navigation .alignleft a, .reply a, .afterpost .navigation .alignright a,.cancel-comment-reply a { padding: 2px 5px; margin-bottom: 5px; font-weight: normal; text-transform: uppercase; background: #0a476b; font-size: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: none; text-shadow: 1px 1px #5186a5; color: #fff; }
+.afterpost .navigation .alignleft a:hover, .afterpost .navigation .alignright a:hover, .reply a:hover, .cancel-comment-reply a:hover { background: #993333; text-shadow: 1px 1px #c36363; text-decoration: none; }
+.afterpost .navigation {background:none;}
+.afterpost .navigation .alignleft a, .afterpost .navigation .alignright a {width:125px; padding:3px 0 0 3px; text-align:center; height:20px;}
+
+/* Side block */
+#side p.header {color: #0a476b; }
+
+#side div.ads img.ad {border: solid 1px #222; }
+
+#calendar_wrap th {background-color: #777; color: #eee;}
+#calendar_wrap td#today {background-color: #ccc; color: #fff;}
+
+#searchform input {border: solid 1px #aaa; }
+#searchform input#s {border: solid 1px #aaa; background-color: #ddd; }
+#searchform input#searchsubmit {	background-color: #666;border: none; color: #fff; }
+
+/* Footer */
+#prefooter {background: #ddd none repeat-x top center; border-bottom: solid 1px #fff; color: #555;  }
+#footer {border-top: solid 1px #aaa; background: url(../images/back_prefooter_silver.png) repeat-x bottom center; }
+#footer p.header, #prefooter p.header { color: #0a476b; }

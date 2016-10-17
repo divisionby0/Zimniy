@@ -6,8 +6,6 @@
  * @subpackage zimniy
  */
 ?>
-<div class="girl-back">
-
     <!-- begin scheme -->
     <section id="scheme">
         <div class="container">

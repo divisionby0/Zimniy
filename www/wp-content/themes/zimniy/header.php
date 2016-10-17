@@ -57,7 +57,6 @@
     <?php wp_head(); ?>
 
     <!-- begin header -->
-
     <header id="home">
         <div class="height-custom">
             <div class="header-top default-menu" id="menu">
@@ -95,7 +94,10 @@
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 p0">
                         <div class="tel-header">
-                            <p>+7 926 5 500 500<br>
+                            <?php
+                            $phone_number = get_option( 'phone_number', '' );
+                            echo '<p>'.$phone_number.'<br>';
+                            ?>
                                 <span>Ежедневно, круглосуточно</span></p>
                         </div>
                     </div>
@@ -149,13 +151,7 @@
             </div>
         </div>
     </header>
-
-    <!-- end header -->
-
-
 </head>
-<body <?php body_class(); ?>>
-
-<!-- HERE GOES YOUR HEADER MARKUP, LIKE LOGO, MENU, SOCIAL ICONS AND MORE -->
-
-<!-- DON'T FORGET TO CLOSE THE BODY TAG ON footer.php FILE -->
+<body>
+<div class="girl-back">
+<?php //body_class(); ?>

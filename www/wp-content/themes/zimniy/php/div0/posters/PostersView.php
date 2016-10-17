@@ -25,20 +25,10 @@ class PostersView
 
             echo '</div>';
 
-            /*
-            echo '<div class="poster-link">
-                            <a href="">Заказать столик</a>
-                            <a id="buyOnlineButton" href="#popup-online2" class="modalbox" data-partydate="'.$poster->getDate().'" data-partyimage="'.$poster->getImage().'" data-partycost="'.$prices[0].'" data-partysaleprice="'.$prices[1].'">Купить стоячий билет</a>
-                            <a id="buyOnlineButton" href="#popup-online2" class="modalbox" data-partydate="'.$poster->getDate().'" data-partyimage="'.$poster->getImage().'" data-partycost="'.$prices[0].'" data-partysaleprice="'.$prices[1].'">Купить стоячий билет</a>
-                        </div>';
-            */
-
-            echo '<div class="poster-link">
-                            <a href="">Заказать столик</a>
-                            <a id="buyOnlineButton" href="#popup-online2" class="modalbox buyOnlineButton" data-partydate="'.$poster->getDate().'" data-partyimage="'.$poster->getImage().'" data-partycost="'.$prices[0].'" data-partysalecost="'.$prices[1].'">Купить стоячий билет</a>
-                        </div>';
-
-            echo '</div></li>';
+            echo '<div class="poster-link">';
+            echo '<a href="">Заказать столик</a>';
+            echo '<a id="buyOnlineButton" href="#popup-online2" class="modalbox buyOnlineButton" data-partydate="'.$poster->getDate().'" data-partyimage="'.$poster->getImage().'" data-partycost="'.$prices[0].'" data-partysalecost="'.$prices[1].'">Купить стоячий билет</a>';
+            echo '</div></div></li>';
         }
 
         echo '</ul></div>';

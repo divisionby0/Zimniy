@@ -398,7 +398,7 @@ body .container{
 
 .girl-back{
 	background:url('images/girl-back.jpg')no-repeat;
-	min-height: 6546px;
+	min-height: 654px;
 	background-size: cover;
 }
 
@@ -609,6 +609,11 @@ mark{
 }
 
 /*menu*/
+/*
+.ui-widget-content{
+	background-color:rgba(255, 255, 255, 0) !important;
+}
+*/
 
 #menu{
 	padding-bottom: 12px;
@@ -631,7 +636,6 @@ mark{
 	list-style: none;
 	background: url('images/list-menu.png')no-repeat center;
 	outline: none;
-
 }
 .menu-bar li a{
 	color:#fff;
@@ -1093,7 +1097,7 @@ mark{
 	float: right;
 	font-size: 40px;
 	font-family:'Proxima Nova Light';
-	color:#fff;
+	color:white;
 	line-height: 41px;
 }
 #footer h4{

@@ -7,8 +7,6 @@
  */
 ?>
 
-<!-- begin menu -->
-
 <section id="menu" class="visible-lg">
     <div class="container" id="menu2">
         <div class="text-center tittle">
@@ -679,5 +677,3 @@
         </div>
     </div>
 </section>
-
-<!-- end menu -->

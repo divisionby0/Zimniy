@@ -30,6 +30,7 @@ include_once('php/div0/posters/GetPosters.php');
 include_once('php/div0/posters/Poster.php');
 include_once('php/div0/posters/PostersView.php');
 include_once('php/div0/view/popup/BuyOnlinePopup.php');
+include_once('php/div0/view/GetTicketButton.php');
 
 require_once dirname(__FILE__).'/php/div0/utils/logging/log4php/Logger.php';
 //Logger::configure(dirname(__FILE__).'/php/div0/utils/logging/log4php/resources/appender_file.properties');
@@ -42,14 +43,14 @@ new AddDateToMediaList();
 // ENQUEUE STYLES
 function enqueue_styles() {
     /** REGISTER css/screen.css **/
-    wp_register_style( 'screen-style', THEME_DIR . '/css/main.css', array(), '1', 'all' );
-    wp_enqueue_style( 'screen-style' );
+    //wp_register_style( 'screen-style', THEME_DIR . '/css/main.css', array(), '1', 'all' );
+    //wp_enqueue_style( 'screen-style' );
 
     wp_register_style( 'screen-style', THEME_DIR . '/css/main.css', array(), '1', 'all' );
     wp_enqueue_style( 'screen-style' );
 
-    wp_register_style( 'jqueryUI', 'http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
-    wp_enqueue_style( 'jqueryUI' );
+    //wp_register_style( 'jqueryUI', 'http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+    //wp_enqueue_style( 'jqueryUI' );
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
@@ -76,9 +77,6 @@ function enqueue_scripts() {
     wp_register_script( 'poster', THEME_DIR . '/js/div0/Poster.js');
 
     /** REGISTER HTML5 OtherScript.js **/
-    //wp_register_script( 'custom-script', THEME_DIR . '/js_path/customscript.js', array( 'jquery' ), '1', false );
-    //wp_enqueue_script( 'custom-script' );
-
     wp_enqueue_script( 'jquery-ui-datepicker' );
 
     wp_enqueue_script( 'map' );
@@ -96,6 +94,7 @@ function enqueue_scripts() {
     wp_enqueue_script( 'initor' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+
 
 // adding ajaxurl for frontend
 add_action('wp_head', 'myplugin_ajaxurl');
@@ -173,3 +172,34 @@ add_action( 'woocommerce_product_options_general_product_data', 'woo_add_custom_
 
 // Save Fields
 add_action( 'woocommerce_process_product_meta', 'woo_add_custom_general_fields_save' );
+
+
+function register_general_phone_number()
+{
+    register_setting('general', 'phone_number', 'esc_attr');
+    add_settings_field('my_first_field', '<label for="phone_number">'.__('Phone' , 'phone_number' ).'</label>' , 'print_custom_field', 'general');
+}
+
+function register_general_address()
+{
+    register_setting('general', 'address', 'esc_attr');
+    add_settings_field('address_field', '<label for="address">'.__('Address' , 'address' ).'</label>' , 'print_address_field', 'general');
+}
+
+function print_address_field()
+{
+    $address = get_option( 'address', '' );
+    echo '<input type="text" id="address" name="address" value="' . $address . '" style="width:90%;"/>';
+}
+
+function print_custom_field()
+{
+    $value = get_option( 'phone_number', '' );
+    echo '<input type="text" id="phone_number" name="phone_number" value="' . $value . '" />';
+}
+
+// using: $phone_number = get_option( 'phone_number', '' );
+
+
+add_filter('admin_init', 'register_general_address');
+add_filter('admin_init', 'register_general_phone_number');

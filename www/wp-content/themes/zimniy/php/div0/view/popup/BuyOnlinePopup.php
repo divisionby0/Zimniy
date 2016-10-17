@@ -41,9 +41,13 @@ class BuyOnlinePopup
                     <p>Сумма заказа: <b id="costContainer">50 рублей</b></p>
                     <input type="checkbox" id="chek1"> <label for="chek1">Оплатить онлайн</label>
                 </div>
-                <div class="group">
-                    <button>Получить билет</button>
-                </div>
+                
+                <div class="group">';
+        
+                    new GetTicketButton();
+                    //echo '<button>Получить билет</button>';
+        
+                echo '</div>
                 <div class="podb">
                     Мы не гарантируем наличие свободного столика,<br>если за него не бы внесен депозит.
                 </div>

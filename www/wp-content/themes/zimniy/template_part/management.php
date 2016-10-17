@@ -8,7 +8,6 @@
 ?>
 
 <!-- begin shares -->
-
 <section id="shares">
     <div class="container">
         <div class="text-center tittle">
