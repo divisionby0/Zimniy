@@ -32,6 +32,9 @@ include_once('php/div0/posters/PostersView.php');
 include_once('php/div0/view/popup/BuyOnlinePopup.php');
 include_once('php/div0/view/GetTicketButton.php');
 
+include_once('php/div0/view/scheme/SchemeMap.php');
+include_once('php/div0/view/scheme/SchemeControls.php');
+
 require_once dirname(__FILE__).'/php/div0/utils/logging/log4php/Logger.php';
 //Logger::configure(dirname(__FILE__).'/php/div0/utils/logging/log4php/resources/appender_file.properties');
 

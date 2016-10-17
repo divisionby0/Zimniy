@@ -87,7 +87,6 @@
 </div>
 
 <!-- buy online popup -->
-
 <?php
 new BuyOnlinePopup();
 ?>
