@@ -13,15 +13,13 @@
 
 get_header();
 get_template_part('template_part/area_scheme');
-//get_template_part('template_part/poster');
-//get_template_part('template_part/rest_menu');
-//get_template_part('template_part/vacancies');
-//get_template_part('template_part/photo_gallery');
-//get_template_part('template_part/management');
-//get_template_part('template_part/about');
-//get_template_part('template_part/entrance_info');
-//get_template_part('template_part/night_club_info');
-//get_template_part('template_part/popups');
-//get_template_part('template_part/contacts');
+get_template_part('template_part/poster');
+get_template_part('template_part/rest_menu');
+get_template_part('template_part/vacancies');
+get_template_part('template_part/photo_gallery');
+get_template_part('template_part/management');
+get_template_part('template_part/about');
+get_template_part('template_part/entrance_info');
+get_template_part('template_part/night_club_info');
 
 get_footer();

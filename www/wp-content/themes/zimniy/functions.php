@@ -29,7 +29,10 @@ include_once('php/div0/tags/TagsView.php');
 include_once('php/div0/posters/GetPosters.php');
 include_once('php/div0/posters/Poster.php');
 include_once('php/div0/posters/PostersView.php');
-include_once('php/div0/view/popup/BuyOnlinePopup.php');
+include_once('php/div0/view/popup/BuyTicketOnlinePopup.php');
+include_once('php/div0/view/popup/ReserveTablePopup.php');
+include_once('php/div0/view/popup/RentClubPopup.php');
+include_once('php/div0/view/popup/Messenger.php');
 include_once('php/div0/view/GetTicketButton.php');
 
 include_once('php/div0/view/scheme/SchemeMap.php');

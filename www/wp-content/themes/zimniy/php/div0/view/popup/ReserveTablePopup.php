@@ -1,20 +1,20 @@
 <?php
 
 
-class BuyOnlinePopup
+class ReserveTablePopup
 {
     public function __construct()
     {
-        echo '<div id="popup-online2">
+        echo '<div id="popup-online">
     <div class="form-online">
         <div class="text-center tittle2">
-            <h3>Электронный билет</h3>
+            <h3>Онлайн заказ столика</h3>
         </div>
         <div class="clearfix"></div>
         <div class="hidden-lg hidden-md col-xs-12">
             <div class="online-img">
-                <img src="" alt="" class="partyImage" width="311" height="311">
-                <a href="#scheme">Просмотреть схему зала</a>
+                <img src="'.get_template_directory_uri().'/css/images/online-img.jpg" alt="">
+                <a href="#scheme" class="">Просмотреть схему зала</a>
             </div>
         </div>
         <div class="col-sm-12 col-md-6">
@@ -23,11 +23,17 @@ class BuyOnlinePopup
                     <div class="col-sm-12 col-md-6 pl-0">
                         <span>Интересующая дата:</span>
                         <input type="text" class="datepicker" placeholder="Дата">
+                        <mark>Свободных столиков 2</mark>
                     </div>
-                    <div class="col-sm-12 col-md-6 pr-0 сhek-style">
-                        <span>Пол:</span>
-                        <input type="radio" id="chek2" class="chekstyle" name="group1"> <label for="chek2">М</label>
-                        <input type="radio" id="chek3" class="chekstyle" name="group1"> <label for="chek3">Ж</label>
+                    <div class="col-sm-12 col-md-6 pr-0">
+                        <span>Столик:</span>
+                        <select class="select">
+                            <option>Vip зона</option>
+                            <option>Подиум</option>
+                            <option>Боковые</option>
+                            <option>Центр</option>
+                        </select>
+                        <a href="">Просмотреть схему зала</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -35,28 +41,23 @@ class BuyOnlinePopup
                     <input type="text" name="name" placeholder="Ваше имя">
                 </div>
                 <div class="group">
-                    <input type="text" name="phone" placeholder="Контактный номер телефона">
+                    <input type="text" name="phone" placeholder="Контактный номер телефна">
                 </div>
                 <div class="group-chek">
-                    <p>Сумма заказа: <b id="costContainer">50 рублей</b></p>
+                    <p>Сумма заказа: <b>2500 рублей</b></p>
                     <input type="checkbox" id="chek1"> <label for="chek1">Оплатить онлайн</label>
                 </div>
-                
-                <div class="group">';
-        
-                    new GetTicketButton();
-                    //echo '<button>Получить билет</button>';
-        
-                echo '</div>
+                <div class="group">
+                    <button>Забронировать столик</button>
+                </div>
                 <div class="podb">
                     Мы не гарантируем наличие свободного столика,<br>если за него не бы внесен депозит.
                 </div>
             </form>
         </div>
-        
         <div class="col-sm-12 col-md-6 visible-lg visible-md">
             <div class="online-img">
-                <img src="" alt="" class="partyImage" width="311" height="311">
+                <img src="'.get_template_directory_uri().'/css/images/online-img.jpg" alt="">
                 <a href="#scheme">Просмотреть схему зала</a>
             </div>
         </div>

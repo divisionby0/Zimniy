@@ -1,8 +1,5 @@
 $(document).ready(function() {
     // div0 code
-    //var fotogalleryView = new FotogalleryView();
-    //fotogalleryView.init();
-
 
     $('.anhor a[href*=#]').bind("click", function(e){
       var anchor = $(this);
@@ -21,8 +18,7 @@ $(document).ready(function() {
     });
 
     $(document).ready(function(){
-          var $menu = $("#menu");
-
+        var $menu = $("#menu");
 
         // update sliders
         var  W = $(window).width();
@@ -49,8 +45,6 @@ $(document).ready(function() {
             slideMargin: 30,
             pager: false
         });
-
-
 
           $(window).scroll(function(){
             if ( $(this).scrollTop() > 100 && $menu.hasClass("default-menu") ){
@@ -140,11 +134,12 @@ $(document).ready(function() {
     $( function() {
       $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
         $.datepicker.setDefaults({maxDate: 0});
-      $( ".datepicker" ).datepicker();
+        $( ".datepicker" ).datepicker();
     });
 
     $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
     $.datepicker.setDefaults({maxDate: 0});
+
     /*
        $('.bxslider2').bxSlider({
         pager:false
@@ -180,7 +175,7 @@ $(document).ready(function() {
         active: 0
       });
 
-         var touch = $('.trigger_menu');
+        var touch = $('.trigger_menu');
         var menu = $('.menu');
      
         $(touch).on('click', function(e) {
