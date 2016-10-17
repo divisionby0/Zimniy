@@ -22,4 +22,5 @@ get_template_part('template_part/about');
 get_template_part('template_part/entrance_info');
 get_template_part('template_part/night_club_info');
 
+// 123
 get_footer();
