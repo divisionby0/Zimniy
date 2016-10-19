@@ -12,15 +12,28 @@
  */
 
 get_header();
-get_template_part('template_part/area_scheme');
-get_template_part('template_part/poster');
-get_template_part('template_part/rest_menu');
-get_template_part('template_part/vacancies');
-get_template_part('template_part/photo_gallery');
-get_template_part('template_part/management');
-get_template_part('template_part/about');
-get_template_part('template_part/entrance_info');
-get_template_part('template_part/night_club_info');
+?>
+    <div class="header-main">
+        <div class="container">
+            <div class="visible-xs">
+                <div class="tel-button">
+                    <a href="#popup-online2" class="modalbox">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 p0">
+                <div class="tel-button">
+                    <a href="#popup-online2" class="modalbox">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/css/images/logo.png" alt="">
+            </div>
 
-// 123 4
-get_footer();
+            <?php
+            get_template_part('template_part/this_week_poster');
+            ?>
+        </div>
+    </div>
+
+<?php get_footer(); ?>

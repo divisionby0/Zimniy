@@ -15,7 +15,7 @@ $(document).ready(function() {
       e.preventDefault();
     });      
       $(document).ready(function(){
-      var $menu = $("#menu");
+      var $menu = $("#rest_menu");
       $(window).scroll(function(){
         if ( $(this).scrollTop() > 100 && $menu.hasClass("default-menu") ){
           $menu.fadeOut('fast',function(){

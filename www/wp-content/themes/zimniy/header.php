@@ -59,17 +59,18 @@
     <!-- begin header -->
     <header id="home">
         <div class="height-custom">
-            <div class="header-top default-menu" id="menu">
+            <div class="header-top default-menu" id="rest_menu">
                 <div class="row text-center">
                     <div href="" class="trigger_menu"><img src="<?php echo get_template_directory_uri(); ?>/css/images/menu-mobile.png" alt=""></div>
                     <div class="menu clearfix">
-                        <ul class="anhor">
-                            <li><a href="#shares">Акции</a></li>
-                            <li><a href="#poster">Афиша</a></li>
-                            <li><a href="#menu2">Меню</a></li>
-                            <li><a href="#scheme">Схема зала</a></li>
-                            <li><a href="#photo">Фотогалерея</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu( array(
+                            'container_class' => 'nav-menu',
+                            'menu_class'      => 'navigation-menu clearfix',
+                            'menu'            => 'primary',
+                            'items_wrap'      => '<ul>%3$s</ul>',
+                        ) );
+                        ?>
                     </div>
                 </div>
                 <div class="container p0">
@@ -83,13 +84,14 @@
                     </div>
                     <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 p0">
                         <div class="navig">
-                            <ul class="anhor">
-                                <li><a href="#shares">Акции</a></li>
-                                <li><a href="#poster">Афиша</a></li>
-                                <li><a href="#menu2">Меню</a></li>
-                                <li><a href="#scheme">Схема зала</a></li>
-                                <li><a href="#photo">Фотогалерея</a></li>
-                            </ul>
+                            <?php
+                            wp_nav_menu( array(
+                                'container_class' => 'nav-menu',
+                                'menu_class'      => 'navigation-menu clearfix',
+                                'menu'            => 'primary',
+                                'items_wrap'      => '<ul>%3$s</ul>',
+                            ) );
+                            ?>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 p0">
@@ -101,52 +103,6 @@
                                 <span>Ежедневно, круглосуточно</span></p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-main">
-            <div class="container">
-                <div class="visible-xs">
-                    <div class="tel-button">
-                        <a href="#popup-online2" class="modalbox">Заказать звонок</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-7 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-                    <div class="navig-two">
-                        <ul class="anhor">
-                            <li><a href="#work">Вакансии</a></li>
-                            <li><a href="#entrance">Как попасть</a></li>
-                            <li><a href="#footer">Контакты</a></li>
-                            <li><a href="#scheme">Банкетный зал</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 p0">
-                    <div class="tel-button">
-                        <a href="#popup-online2" class="modalbox">Заказать звонок</a>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/logo.png" alt="">
-                </div>
-                <h1><span>Крупнейший ночной клуб на юге Московской области:<br>Вечеринки до 700 человек</span></h1>
-                <div class="week">
-                    <h3>На этой неделе:</h3>
-                    <div class="week-other">
-                        <div class="week-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/css/images/it-1.jpg" alt="">
-                            <a href="#popup-online2" class="modalbox">Заказать столик</a>
-                        </div>
-                        <div class="week-item">
-                            <img src="<?php echo get_template_directory_uri(); ?>/css/images/it-2.jpg" alt="">
-                            <a href="#popup-online2" class="modalbox">Заказать столик</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="" class="mouse"><img src="<?php echo get_template_directory_uri(); ?>/css/images/scroll.png" alt=""></a>
                 </div>
             </div>
         </div>

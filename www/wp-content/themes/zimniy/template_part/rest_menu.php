@@ -7,14 +7,14 @@
  */
 ?>
 
-<section id="menu" class="visible-lg">
+<section id="rest_menu" class="visible-lg">
     <div class="container" id="menu2">
         <div class="text-center tittle">
             <h2>Меню ресторана и бара</h2>
         </div>
         <div class="row" id="tabs">
             <div class="visible-lg col-lg-9 p0">
-                <div class="menu-item">
+                <div class="rest-menu-item">
                     <div id="tabs-1">
                         <div class="one-table">
                             <h3>Горячие блюда</h3>

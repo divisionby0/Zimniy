@@ -41,9 +41,6 @@ include_once('php/div0/view/scheme/SchemeControls.php');
 require_once dirname(__FILE__).'/php/div0/utils/logging/log4php/Logger.php';
 //Logger::configure(dirname(__FILE__).'/php/div0/utils/logging/log4php/resources/appender_file.properties');
 
-//$logger = Logger::getRootLogger();
-//$logger->debug("\nLog started");
-
 new AddDateToMediaList();
 
 // ENQUEUE STYLES
@@ -209,3 +206,9 @@ function print_custom_field()
 
 add_filter('admin_init', 'register_general_address');
 add_filter('admin_init', 'register_general_phone_number');
+
+
+function register_my_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );

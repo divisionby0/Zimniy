@@ -125,45 +125,45 @@ code a b {
 }
 
 /* Menu */
-#menu {
+#rest_menu {
 	padding: 10px;
 }
 
-#menu ul {
+#rest_menu ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-#menu ul ul {
+#rest_menu ul ul {
 	padding-left: 10px;
 }
 
-#menu li {
+#rest_menu li {
 	white-space: nowrap;
 	position: relative;
 }
 
-#menu a {
+#rest_menu a {
 	display: block;
 	padding: 0 2px;
 }
 
-#menu .active > a, #menu > span {
+#rest_menu .active > a, #rest_menu > span {
 	color: #333333;
 	background: none;
 	font-weight: bold;
 }
 
-#menu .active > a.invalid {
+#rest_menu .active > a.invalid {
 	color: #e71818;
 }
 
-#menu .active > a:hover, #menu .active > a:active, #menu .active > a:focus {
+#rest_menu .active > a:hover, #rest_menu .active > a:active, #rest_menu .active > a:focus {
 	background-color: #006aeb;
 }
 
-#menu #groups span {
+#rest_menu #groups span {
 	position: absolute;
 	top: 4px;
 	right: 2px;
@@ -174,19 +174,19 @@ code a b {
 	background: url('collapsed.png') transparent 0 0 no-repeat;
 }
 
-#menu #groups span:hover {
+#rest_menu #groups span:hover {
 	background-position: -12px 0;
 }
 
-#menu #groups span.collapsed {
+#rest_menu #groups span.collapsed {
 	background-position: 0 -12px;
 }
 
-#menu #groups span.collapsed:hover {
+#rest_menu #groups span.collapsed:hover {
 	background-position: -12px -12px;
 }
 
-#menu #groups ul.collapsed {
+#rest_menu #groups ul.collapsed {
 	display: none;
 }
 

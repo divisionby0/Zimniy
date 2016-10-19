@@ -2,10 +2,8 @@
 ?>
 
 <section id="footer">
-    <?php get_template_part('template_part/contacts'); ?>
-    <?php get_template_part('template_part/payanyway'); ?>
-
-    
+    <?php get_template_part('template_part/socials'); ?>
+    <?php get_template_part('template_part/footer-phone'); ?>
 </section>
 
 </div>

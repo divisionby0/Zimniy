@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
 
     $(document).ready(function(){
-        var $menu = $("#menu");
+        var $menu = $("#rest_menu");
 
         // update sliders
         var  W = $(window).width();

@@ -914,7 +914,7 @@ var wpNavMenu;
 			params = {
 				'action': 'menu-quick-search',
 				'response-format': 'markup',
-				'menu': $('#menu').val(),
+				'menu': $('#rest_menu').val(),
 				'menu-settings-column-nonce': $('#menu-settings-column-nonce').val(),
 				'q': q,
 				'type': input.attr('name')
@@ -963,7 +963,7 @@ var wpNavMenu;
 		},
 
 		addItemToMenu : function(menuItem, processMethod, callback) {
-			var menu = $('#menu').val(),
+			var menu = $('#rest_menu').val(),
 				nonce = $('#menu-settings-column-nonce').val(),
 				params;
 

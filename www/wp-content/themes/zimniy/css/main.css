@@ -1,6 +1,7 @@
 
 html *{
 	max-height:1000000px;
+	margin-top: 0 !important;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -171,7 +172,6 @@ body .container{
 }
 
 /*header*/
-
 .header-top{
 	height: 60px;
 	font-weight: 600;
@@ -188,17 +188,20 @@ body .container{
 	margin: 0px;
 }
 #home{
-	background: url('images/header-main.jpg')no-repeat center;
-	min-height: 820px;
+	/*background: url('images/header-main.jpg')no-repeat center;*/
+	background-color: #666666;
+	min-height: 8px;
 	background-size: cover;
 }
 .navig li{
 	float: left;
 	list-style: none;
-	padding: 22px 20px 23px 20px;
+	padding: 22px 6px 23px 6px;
 	font-family:'Proxima_Nova_Bold';
 }
 .navig{
+	font-size: smaller !important;
+	font-weight: normal;
 	text-align: center;
 }
 .navig li a{
@@ -212,8 +215,12 @@ body .container{
 }
 .navig li:hover a{
 	color:#fff;
-
 }
+
+ul#primary li {
+	background: inherit !important;
+}
+
 .tel-header{
 	font-family:'Proxima_Nova_Bold';
 	text-align: right;
@@ -395,9 +402,9 @@ body .container{
 	min-height: 60px;
 }
 /*girl-back*/
-
 .girl-back{
-	background:url('images/girl-back.jpg')no-repeat;
+	/*background:url('images/girl-back.jpg')no-repeat;*/
+	background-color: #ccc;
 	min-height: 654px;
 	background-size: cover;
 }
@@ -608,23 +615,20 @@ mark{
 	top: 26%;
 }
 
-/*menu*/
-/*
-.ui-widget-content{
-	background-color:rgba(255, 255, 255, 0) !important;
-}
-*/
 
-#menu{
+
+
+/*menu*/
+#rest_menu {
 	padding-bottom: 12px;
 }
 .menu-bar{
 	padding-top: 12px;
 }
-#menu .tittle h2{
+#rest_menu .tittle h2{
 	margin-bottom: 4px;
 }
-.menu-item{
+.rest-menu-item{
 	background: url('images/menu.jpg')no-repeat center;
 	height: 688px;
 	padding: 30px 65px;

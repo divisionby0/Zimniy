@@ -350,7 +350,7 @@ if ( isset( $_GET['updated'] ) ) {
 		?>
 
 		<h2><?php _e( 'Menu Settings' ); ?></h2>
-		<table id="menu" class="form-table">
+		<table id="rest_menu" class="form-table">
 			<tr>
 				<th scope="row"><?php _e( 'Enable administration menus' ); ?></th>
 				<td>
